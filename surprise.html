@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>깜짝 퀴즈</title>
+    <title>깜짝 선물</title>
 
     <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/591591.png">
 
@@ -22,21 +22,49 @@
             background-color: #1E110F;
             color: white;
         }
+
+        .gift {
+            width: 300px;
+            height: 600px;
+
+            background-image: url('gift.jpg');
+            background-size: cover;
+            background-position: center;
+
+            margin: 50px auto 0px auto;
+
+            cursor: pointer;
+
+            border: 2px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+
+        }
+
+        @media screen and (max-width: 760px) {
+            .gift {
+                width: 200px;
+                height: 400px;
+            }
+        }
     </style>
 
     <script>
         var result = confirm("선물 받을 준비가 되셨나요?");
         if (result) {
-            alert("좋아요!");
+            alert("너가 사먹어");
+            window.location.href = 'base.html'
         } else {
-            alert("저런");
-            window.location.href = 'index.html'
+            alert("그냥 주면 좀 받어");
+        }
+
+        function go_rtan() {
+            window.location.href = 'base.html'
         }
     </script>
 </head>
 
 <body>
-
+    <div class="gift" onclick="go_rtan()"></div>
 </body>
 
 </html>
