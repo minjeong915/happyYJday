@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD용주HBD</title>
+
+    <link rel="shortcut icon" href="https://freepngimg.com/download/christmas/26196-6-christmas-stocking.png">
+
+    <meta property="og:image" content="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX47427525.jpg">
+    <meta property="og:title" content="길동이의 카드">
+    <meta property="og:description" content="2020을 추억하며">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <Style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: rgb(204, 38, 135)
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url(https://mblogthumb-phinf.pstatic.net/MjAxNzAyMjBfMjAz/MDAxNDg3NTIwOTQ1ODk4.wyKIaQm-Zd7MV8HyKw00A9kIoLl_coYqw3JGEW_JpjMg.Uku9ZNVy0Kct9Iox6VtzKW8vSxlrrxuHywKZ7cv70zsg.GIF.epooney/birth_%284%29.gif?type=w800);
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+        }
+
+        .messagebox {
+            background-color: ivory;
+
+            width: 400px;
+            margin: auto;
+
+            color: brown;
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 0px white;
+
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .envelope {
+            margin: 150px auto 0px auto;
+            }
+        }   
+    </Style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan() {
+            window.location.href = 'bday.html'
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">용주에게 도착한 네 번째 편지</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>생일축하해!!</h1>
+        <div class="messagebox">
+            해피벌쓰데이 용주!!! <br />
+            코로나때문에 답답한 하루하루지만 <br />
+            덕분에 새로운것도 하고 재밌는데도 가면서 <br />
+            에브리데이 다이내믹해~ <br />
+            항상 고맙고 행복한 하루 보내!!! <br />
+            Happy Birthday;)<br />
+            <p class="from">2020.12.27. 민경이가</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

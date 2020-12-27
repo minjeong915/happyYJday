@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>용주알파 탄신일 축하! </title>
+
+    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/377601.png">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Sunflower', sans-serif;
+        }
+
+        body {
+            background-color: thistle;
+        }
+
+        .envelope {
+
+            width: 200px;
+            height: 150px;
+            background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+            backgroound-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: teal;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+
+        .rtan {
+            background-color: whitesmoke;
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://lh3.googleusercontent.com/proxy/ql3G2HDc9BmWuQvHmoz9A1gx6MFuYhJpJBzoma2Dy-2uL7GWDJWrE3hOgxN2Nd7PKbAqDyIoxnHypNYV3zQ2x8XRZ3GGJtr3uid1ogCDFRVkD4H8lf5MFOpcoeP0CrMnYc7I2iQgO-cMuoFvOFuV7RnCwxgG_Nl_4FsxQETy3ikH2IatNBNzqt7CuV9GcL7WlJgLDyVPPzqiRAQZj6obOa7IXwAdeVEgpkNMGxVkYYXduS4YfW_wrTU9pCXksiXFrb4RbBHysXvOr53XtpBdgf5ks1MwmZAwmhdB52QYpM94a-k');
+            background-size: cover;
+            background-position: center;
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 9px 0px white;
+        }
+
+        h1 {
+            color: teal;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .messagebox {
+            background-color: rgb(253, 250, 253);
+            width: 400px;
+            margin: auto;
+
+            color: mediumvioletred;
+            padding: 30px;
+            font-size: 15px;
+            line-height: 35px;
+            box-shadow: 0px 0px 15px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+                q font-size: 15px;
+            }
+
+            .rtan {
+                background-color: whitesmoke;
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            .envelope {
+                height: 150px;
+                margin: 150px auto 0px auto;
+            }
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+
+        }
+
+        function go_rtan() {
+            window.location.href = 'bday.html'
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">용주에게 도착한 두 번째 편지</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1> 오빠이제 아홉수네...? ^^ </h1>
+        <div class="messagebox">
+            Happy Birthday Dear Youngjoo!<br />
+            생일이 어떻게 크리스마스 다다음 날이네!! 예수님이가?<br />
+            우리 서프라이즈 파티 기획했는데 오빠가 삼천포가서 <br />
+            실패... ㅜㅠ 아쉽지만 이렇게 영혼을 갈은 코딩에<br />
+            오빠 생일을 축하하는 내맘을 조금이라도 담아본다... <br />
+            오빠 생일 축하하고!! 오빠를 알게되서 넘 좋다!! <br />
+            변치말고 오래오래 행복하자! <br />
+            <p class="from"> yours 주희가... </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

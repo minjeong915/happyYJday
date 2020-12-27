@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해피 용주 데이!!!</title>
+
+    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/591591.png">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #ef6853;
+            %바디는 하나라서 점이 필요 없음
+        }
+
+        .envelope {
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://img1.daumcdn.net/thumb/R1024x0/?fname=http://t1.daumcdn.net/cafeattach/1YmK3/795a62d6b23f97e4de5dd25ae25e3929a8e6f65e');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+
+            width: 400px;
+            margin: auto;
+
+            color: brown;
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 0px white;
+
+        }
+
+        .from {
+            text-align: right;
+
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+                %760보다 작을때 해라
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+    </style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan() {
+            window.location.href = 'bday.html'
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">용주에게 도착한 세 번째 편지</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+
+        <h1>Oh! Captin, My Captin</h1>
+        <div class="messagebox">
+            Happy Birthday 용주오빠!!!<br />
+            용드라이버 덕에 당일에 800km도 찍어보고 너무 짜릿했어요😆<br />
+            앞으로도 어마잡가랑 할게 쌓여있다니 너무나 설렙니다😚<br />
+            2021년은 더 좋은 사람들과 함께 알차고 행복한 시간 보내실 테니 코로나 잠잠해질 때까지 돈 많이 모아두시고 틈틈이 체력단련해두세요!!<br />
+            그러고 보니 5일 차이로 오빠가 되셨네요? 나중에 야자타임 노려봅니다.<br />
+            다시 한번 생일 축하해요!!!
+
+            <p class="from">2020년 12월 27일 민정이가</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

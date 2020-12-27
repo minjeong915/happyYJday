@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해피 용주 데이!!!</title>
+
+    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/591591.png">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color:#a798ea;
+        }
+
+        .envelope {
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://lh3.googleusercontent.com/proxy/AXvcsCTA7BzOzY8fwt--EpdSiP5_EeqZoB1R_z3yQgvdDsoAYhoRaJKLYXyN5uQMhYh23CBiPnwJEM6FpRLiCcTY4oqETco2Qz_zhqtb2xp-JgGSbo-hDMI_f8Cb5LjQy-1S1l820BSZt7sil-JSTB74qHEBOuXVnDDoWSvfzUSGfH-X_8FSSj3ixmySwG7r2Lo_SO_054166PqASe6MPrxajFWsVnWfO6k8bCLsbWjvk5Pb0ELBEzxvigdLFDy29KcCLZ-PEdZUV89b7BqIfqZL72IJbkPP8iWBCmVAiNAObjOFx1yTLYnpoA');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+
+            width: 400px;
+            margin: auto;
+
+            color: brown;
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 0px white;
+
+        }
+
+        .from {
+            text-align: right;
+
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+                %760보다 작을때 해라
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+    </style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_rtan() {
+            window.location.href = 'bday.html'
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">용주에게 도착한 여섯 번째 편지</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+
+        <h1>혜지가 적을 부분</h1>
+        <div class="messagebox">
+            (예시)생일축하합니다<br />
+
+            <p class="from">혜지가</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
